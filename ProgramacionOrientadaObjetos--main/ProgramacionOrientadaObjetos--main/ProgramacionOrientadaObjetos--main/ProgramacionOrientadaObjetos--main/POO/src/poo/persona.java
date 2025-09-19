@@ -2,15 +2,17 @@
 package poo;
 public class persona {
     private String nombre;
-    int edad;
+    protected int edad;
     
+    
+    //Constructor, inicializa nombre,edad
     public persona(String nombre, int edad)
     {
         
         this.nombre=nombre;
         this.edad= edad;
     }
-    
+    //Constructor inicializa nombre
     public persona(String nombre)
     {
       
@@ -23,9 +25,29 @@ public class persona {
         return edad;
     }
     
-    public void asignarnombre(String nombre){
+    
+    //Asignar nombre
+    public void Setnombre(String nombre){
     
         this.nombre= nombre;
+    }
+    
+    
+    //Devolver nombre
+    public String getnombre(){
+        return nombre;
+    
+    }
+    
+    
+    
+    public int getedad(){
+        return edad;
+    }
+    
+    
+    public void setedad(int edad){
+        this.edad=edad;
     }
     
     public void saludar(){

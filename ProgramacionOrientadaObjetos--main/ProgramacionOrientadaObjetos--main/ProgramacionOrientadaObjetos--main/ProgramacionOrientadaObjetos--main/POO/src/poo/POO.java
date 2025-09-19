@@ -13,9 +13,21 @@ public class POO {
         persona1.saludar();
         
         persona persona2= new persona("Juan");
-        persona2.edad= 28;
+        persona2.setedad(30);
         persona2.saludar();
         
+        
+        Estudiante estudiante1= new Estudiante("Pedro",20,1);
+        estudiante1.saludar();
+        estudiante1.mostrardatos();
+        
+        Animal animal1=new Animal();
+        Perro perro1=new Perro();
+        Gato gato1= new Gato();
+        
+        animal1.Hablar();
+        perro1.Hablar();
+        gato1.Hablar();
     }
     
 }
