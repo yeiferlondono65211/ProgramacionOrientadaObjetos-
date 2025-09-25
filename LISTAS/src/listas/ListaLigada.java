@@ -64,4 +64,16 @@ public class ListaLigada {
            }
     }
     
+    public void BorrarInicio(){
+        if (Punta != null){
+            while (P != null){
+                   System.out.println(P.getDato());
+                   P=P.getEnlace();
+               }
+        
+        }
+    
+    
+    }
+    
 }
